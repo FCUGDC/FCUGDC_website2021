@@ -116,7 +116,7 @@
               pic2_2.innerHTML=pic1_2.innerHTML
               pic_2.scrollLeft=pic_2.scrollWidth
               function Marquee(){
-                if(pic.scrollLeft<=0)
+                if(pic_2.scrollLeft<=0)
                   pic_2.scrollLeft+=pic2_2.offsetWidth
                 else{
                   pic_2.scrollLeft--
@@ -145,8 +145,36 @@
   <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
-        
-        
+        <div id="pic_3" style="OVERFLOW: hidden; width:560">
+          <table width="100%" border=0 cellpadding=0 bgcolor="" cellspace=0>
+            <tr>
+              <td id="pic1_3">
+                <table>
+                  <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/zh/thumb/6/65/Usada_Pekora.png/300px-Usada_Pekora.png" height="150" border=0></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/zh/thumb/6/65/Usada_Pekora.png/300px-Usada_Pekora.png" height="150" border=0></td>
+                  </tr>
+                </table>
+              </td>
+              <td id="pic2_3"></td>
+            </tr>
+            <script>
+              var speed=30
+              pic2_3.innerHTML=pic1_3.innerHTML
+              pic_3.scrollLeft=pic_3.scrollWidth
+              function Marquee(){
+                if(pic_3.scrollLeft<=0)
+                  pic_3.scrollLeft+=pic2_3.offsetWidth
+                else{
+                  pic_3.scrollLeft--
+                }
+              }
+              var MyMar=setInterval(Marquee,speed)
+              pic_3.onmouseover=function() {clearInterval(MyMar)}
+              pic_3.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+            </script>
+          </table>
+        </div>
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3">兔田社長迫害中</h1>
@@ -166,8 +194,36 @@
   <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
-        
-        
+        <div id="pic_4" style="OVERFLOW: hidden; width:560">
+          <table width="100%" border=0 cellpadding=0 bgcolor="" cellspace=0>
+            <tr>
+              <td id="pic1_4">
+                <table>
+                  <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/zh/thumb/6/65/Usada_Pekora.png/300px-Usada_Pekora.png" height="150" border=0></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/zh/thumb/6/65/Usada_Pekora.png/300px-Usada_Pekora.png" height="150" border=0></td>
+                  </tr>
+                </table>
+              </td>
+              <td id="pic2_4"></td>
+            </tr>
+            <script>
+              var speed=30
+              pic2_4.innerHTML=pic1_4.innerHTML
+              pic_4.scrollLeft=pic_4.scrollWidth
+              function Marquee(){
+                if(pic_4.scrollLeft<=0)
+                  pic_4.scrollLeft+=pic2_4.offsetWidth
+                else{
+                  pic_4.scrollLeft--
+                }
+              }
+              var MyMar=setInterval(Marquee,speed)
+              pic_4.onmouseover=function() {clearInterval(MyMar)}
+              pic_4.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+            </script>
+          </table>
+        </div>
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3">遊戲標題</h1>
