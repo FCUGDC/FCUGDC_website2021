@@ -166,10 +166,10 @@
               pic2_3.innerHTML=pic1_3.innerHTML
               pic_3.scrollLeft=pic_3.scrollWidth
               function Marquee(){
-                if(pic_3.scrollLeft<=0)
-                  pic_3.scrollLeft+=pic2_3.offsetWidth
+                if(pic_3.scrollLeft>=pic2_3.offsetWidth)
+                  pic_3.scrollLeft=0
                 else{
-                  pic_3.scrollLeft--
+                  pic_3.scrollLeft++
                 }
               }
               var MyMar=setInterval(Marquee,speed)
