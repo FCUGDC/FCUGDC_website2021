@@ -34,7 +34,7 @@
 <main>
 
   <div class="px-4 py-5 my-5 text-center">
-    <a href="/遊戲開發社.pptx" download="遊戲開發社 申請成立正式社團實施報告.pptx"><img class="d-block mx-auto mb-4" src="/assets/LOGO.png" width="200" height="200" alt="LOGO"></a>
+    <img class="d-block mx-auto mb-4" src="/assets/LOGO.png" width="200" height="200" alt="LOGO">
     <h1 class="display-5 fw-bold">逢甲大學遊戲開發社 GameJam110-2</h1>
   </div>
 
@@ -87,7 +87,36 @@
   <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
-        圖OR影片
+        <div id="pic" style="OVERFLOW: hidden; width:560">
+          <table width="100%" border=0 cellpadding=0 bgcolor="" cellspace=0>
+            <tr>
+              <td id="pic1">
+                <table>
+                  <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/zh/thumb/6/65/Usada_Pekora.png/300px-Usada_Pekora.png" height="150" border=0></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/zh/thumb/6/65/Usada_Pekora.png/300px-Usada_Pekora.png" height="150" border=0></td>
+                  </tr>
+                </table>
+              </td>
+              <td id="pic2"></td>
+            </tr>
+            <script>
+              var speed=30
+              pic2.innerHTML=pic1.innerHTML
+              pic.scrollLeft=pic.scrollWidth
+              function Marquee(){
+                if(pic.scrollLeft<=0)
+                  pic.scrollLeft+=pic2.offsetWidth
+                else{
+                  pic.scrollLeft--
+                }
+              }
+              var MyMar=setInterval(Marquee,speed)
+              pic.onmouseover=function() {clearInterval(MyMar)}
+              pic.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+            </script>
+          </table>
+        </div>
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3">兔田社長迫害中</h1>
@@ -107,7 +136,7 @@
   <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/UcVe0hGxcyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        圖OR影片
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3">遊戲標題</h1>
