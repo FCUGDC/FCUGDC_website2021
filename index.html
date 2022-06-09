@@ -47,36 +47,7 @@
   <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
-        <div id="pic" style="OVERFLOW: hidden; width:560">
-          <table width="100%" border=0 cellpadding=0 bgcolor="" cellspace=0>
-            <tr>
-              <td id="pic1">
-                <table>
-                  <tr>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/zh/thumb/6/65/Usada_Pekora.png/300px-Usada_Pekora.png" height="315" border=0></td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/zh/thumb/6/65/Usada_Pekora.png/300px-Usada_Pekora.png" height="315" border=0></td>
-                  </tr>
-                </table>
-              </td>
-              <td id="pic2"></td>
-            </tr>
-            <script>
-              var speed=15
-              pic2.innerHTML=pic1.innerHTML
-              pic.scrollLeft=pic.scrollWidth
-              function Marquee(){
-                if(pic.scrollLeft>=pic2.offsetWidth)
-                  pic.scrollLeft%=pic2.offsetWidth
-                else{
-                  pic.scrollLeft+=1
-                }
-              }
-              var MyMar=setInterval(Marquee,speed)
-              pic.onmouseover=function() {clearInterval(MyMar)}
-              pic.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
-            </script>
-          </table>
-        </div>
+        <img src="/assets/nekobox-1.png" height="315">
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3">沒什麼用的貓貓箱</h1>
@@ -86,6 +57,7 @@
         <p class="lead">　</p>
         <p class="lead">玩法：上下左右控制游標移至開關後z啟動開關</p>
         <p class="lead">對，我也不知道在做什麼XD</p>
+        <p class="lead"><a target="_blank" href="https://huyuhua33.itch.io/uselesscatox">下載傳送門</a></p>
         <p class="lead">Made by Siganmorfu & 高班文</p>
       </div>
     </div>
